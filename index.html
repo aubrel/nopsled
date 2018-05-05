@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            /**
+             * @group Typography.
+             */
+            @font-face {
+                font-family: "MODENINE";
+                src: url("fonts/MODENINE.ttf");
+            }
+            @font-face {
+                font-family: "VeraMoBd";
+                src: url("fonts/VeraMoBd.ttf")
+            }
+            html, body {
+                background-color: #383838;
+                margin-left: 1em; 
+            }
+            #MainTitle {
+                position: fixed;
+                top: 10%;
+                left: 10%;
+                transform: translate(-10%, -10%);
+                font: 105px "MODENINE", Monospace;
+                color: #fc1e82;
+                /* writing-mode: vertical-rl;
+                text-orientation: upright; */
+                text-transform: uppercase;
+                width: 600px;
+                height: 200px;
+            }
+           
+            #main-text {
+                display: block;
+                margin: 12em 6em 0em 40em;
+                height: 500px;
+                width: 700px;
+                font: 17px "VeraMoBd", Monospace;
+                color: #fc1e82;
+            }
+
+            h1, h2, h3 {
+                color: #474747;
+                text-align: center;
+            }
+            h1 {
+                font-size: 40px;
+                margin-top: 3em;
+            }
+            header {
+                max-width: 100px;
+            }
+            header h1 {
+                margin: 0;
+            }
+            h2 {
+                font-size: 30px;
+                margin-top: 2em;
+            }
+            h3 {
+                font-size: 25px;
+            }
+
+            /**
+             * @group Links.
+             */
+            a {
+                color: #fc1e82;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: #000;
+                background-color: #71f7c1;
+                transition: background-color .4s;
+            }
+           
+           /**
+            * @group Animations.
+            */
+              @keyframes blink {
+                50% {
+                 opacity: 0.0;
+                }
+              }
+              @-webkit-keyframes blink {
+                50% {
+                 opacity: 0.0;
+                }
+              }
+              .blink {
+                animation: blink 1s step-start 0s infinite;
+                -webkit-animation: blink 1s step-start 0s infinite;
+              }
+        </style>
+    </head>
+    <body>
+        <header>
+            <title>Nopsled</title>
+            <div id="MainTitle">
+                Nopsled<span class="blink" style="color: #71f7c1">_</span>
+            </div>
+            <div id="main-text">
+                <div>
+<p>A movable tech feast.</p>
+
+<p>Nopsled (whose name derives from the <a href="https://en.wikipedia.org/wiki/NOP_slide" alt="Wikipedia article on NOP sleds">NOP sled when exploiting a buffer overflow vulnerability</a>) is an educational series on technology that blends interactive intensives with demos and social engagement. We are for a celebratory setting, one in which information normally reserved for expensive bootcamps or other knowledge silos are made more available to the public and at a higher quality. Our style is anarchic and experiential, with seriousness in method and rigor in content, while also remembering how to have a good time.</p>
+
+<p>Topics range from system administration to expert level cybersecurity subjects, to advanced coding techniques, to using free software in smashing the idea that "Enterprise" is better, to how to develop self-hosted and autonomous systems.</p>
+
+<p>Our educators and presenters have over twenty years of experience in each of the aforementioned topics, are authors of books on the recommended reading lists of Web and Internet engineering standards bodies, core contributors to the number 1 free software tools in their class, and are regularly invited to speak at technology events and conferences across the globe.</p>
+
+"<em>Education is not preparation for life;<br> education is life itself."</em> &mdash; John Dewey</div>
+            </div>
+        </header>
+    </body>
+</html>
